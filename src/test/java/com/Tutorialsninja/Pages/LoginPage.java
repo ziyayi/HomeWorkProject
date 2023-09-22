@@ -27,6 +27,8 @@ public class LoginPage extends PageObject {
         email.sendKeys(ConfigReader.getProperties("username"));
         password.sendKeys(ConfigReader.getProperties("password"));
 
+
+        myAccountButton.click();
         loginButton.click();
     }
 
